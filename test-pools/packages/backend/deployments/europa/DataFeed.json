@@ -1,0 +1,211 @@
+{
+  "address": "0x078184E2a786cBBdf73C908A8bf68Eeffaac4678",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "getActiveCollections",
+      "outputs": [
+        {
+          "internalType": "uint16[]",
+          "name": "",
+          "type": "uint16[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getCollectionID",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_id",
+          "type": "uint16"
+        }
+      ],
+      "name": "getCollectionStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getResult",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "int8",
+          "name": "",
+          "type": "int8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_id",
+          "type": "uint16"
+        }
+      ],
+      "name": "getResultFromID",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "int8",
+          "name": "",
+          "type": "int8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x168ba66d1f89369449c557f89da768843876653e6075c9171920096535094575",
+  "receipt": {
+    "to": "0x0000000000000000000000000000000000000000",
+    "from": "0x41DD8Ea1fc8d83f8c4a20a5a6E57238c7F476C09",
+    "contractAddress": "0x078184E2a786cBBdf73C908A8bf68Eeffaac4678",
+    "transactionIndex": 0,
+    "gasUsed": "640255",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1232cb0740ccfabe4a92036bc66fd39370a128d40ce33bca39c49cb2eb1c6164",
+    "transactionHash": "0x168ba66d1f89369449c557f89da768843876653e6075c9171920096535094575",
+    "logs": [],
+    "blockNumber": 2063710,
+    "cumulativeGasUsed": "640255",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "39743ff03ed3a7c68c6ccd95cf6cd47b",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"getActiveCollections\",\"outputs\":[{\"internalType\":\"uint16[]\",\"name\":\"\",\"type\":\"uint16[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_name\",\"type\":\"bytes32\"}],\"name\":\"getCollectionID\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_id\",\"type\":\"uint16\"}],\"name\":\"getCollectionStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_name\",\"type\":\"bytes32\"}],\"name\":\"getResult\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"int8\",\"name\":\"\",\"type\":\"int8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_id\",\"type\":\"uint16\"}],\"name\":\"getResultFromID\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"int8\",\"name\":\"\",\"type\":\"int8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getActiveCollections()\":{\"returns\":{\"_0\":\"ids of active collections in the oracle\"}},\"getCollectionID(bytes32)\":{\"details\":\"using the hash of collection name, clients can query collection id with respect to its hash, check https://razorscan.io/governance/datafeeds for a full list of active collection names\",\"params\":{\"_name\":\"bytes32 hash of the collection name\"},\"returns\":{\"_0\":\"collection ID\"}},\"getCollectionStatus(uint16)\":{\"params\":{\"_id\":\"collection ID\"},\"returns\":{\"_0\":\"status of the collection\"}},\"getResult(bytes32)\":{\"params\":{\"_name\":\"bytes32 hash of the collection name\"},\"returns\":{\"_0\":\"result of the collection and its power\",\"_1\":\"power\"}},\"getResultFromID(uint16)\":{\"params\":{\"_id\":\"collection ID\"},\"returns\":{\"_0\":\"result of the collection and its power\",\"_1\":\"power\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getCollectionStatus(uint16)\":{\"notice\":\"fetch collection status using id\"},\"getResult(bytes32)\":{\"notice\":\"fetch collection result by name\"},\"getResultFromID(uint16)\":{\"notice\":\"fetch collection result by Id\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/dexPrice.sol\":\"DataFeed\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/dexPrice.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\ninterface IResultManager {\\r\\n    function getCollectionID(bytes32 _name) external view returns (uint16);\\r\\n\\r\\n    function getResult(bytes32 _name) external view returns (uint256, int8);\\r\\n\\r\\n    function getResultFromID(uint16 _id) external view returns (uint256, int8);\\r\\n\\r\\n    function getActiveCollections() external view returns (uint16[] memory);\\r\\n\\r\\n    function getCollectionStatus(uint16 _id) external view returns (bool);\\r\\n}\\r\\n\\r\\ncontract DataFeed {\\r\\n    IResultManager internal resultManager;\\r\\n\\r\\n    constructor() {\\r\\n        resultManager = IResultManager(0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566);\\r\\n    }\\r\\n\\r\\n\\r\\n    ///@dev using the hash of collection name, clients can query collection id with respect to its hash,\\r\\n    ///check https://razorscan.io/governance/datafeeds for a full list of active collection names\\r\\n    ///@param _name bytes32 hash of the collection name\\r\\n    ///@return collection ID\\r\\n    function getCollectionID(bytes32 _name)\\r\\n    public\\r\\n    view\\r\\n    returns (uint16) {\\r\\n       (uint16 id) = resultManager.getCollectionID(_name);\\r\\n       return id;\\r\\n    }\\r\\n\\r\\n    /// @notice fetch collection result by name\\r\\n    /// @param _name bytes32 hash of the collection name\\r\\n    /// @return result of the collection and its power\\r\\n    /// @return power\\r\\n    function getResult(bytes32 _name)\\r\\n        public\\r\\n        view\\r\\n        returns (uint256, int8)\\r\\n    {\\r\\n        (uint256 result, int8 power) = resultManager.getResult(_name);\\r\\n        return (result, power);\\r\\n    }\\r\\n\\r\\n\\r\\n    ///@return ids of active collections in the oracle\\r\\n    function getActiveCollections()\\r\\n    public\\r\\n    view\\r\\n    returns (uint16[] memory) {\\r\\n        (uint16[] memory activeCollectionIds) = resultManager.getActiveCollections();\\r\\n        return activeCollectionIds;\\r\\n    }\\r\\n\\r\\n    /// @notice fetch collection result by Id\\r\\n    /// @param _id collection ID\\r\\n    /// @return result of the collection and its power\\r\\n    /// @return power\\r\\n    function getResultFromID(uint16 _id)\\r\\n    public\\r\\n    view\\r\\n    returns (uint256, int8) {\\r\\n        (uint256 result, int8 power) = resultManager.getResultFromID(_id);\\r\\n        return (result, power);\\r\\n    }\\r\\n\\r\\n\\r\\n     /// @notice fetch collection status using id\\r\\n     /// @param _id collection ID\\r\\n     /// @return status of the collection\\r\\n    function getCollectionStatus(uint16 _id) public view returns (bool) {\\r\\n        return resultManager.getCollectionStatus(_id);\\r\\n    }\\r\\n}\\r\\n\\r\\n\",\"keccak256\":\"0xd2de7514f38a40e70d2a6c12871717f48721bbc748fe87f4492b435cf59234c5\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5073455b3ef0167ecd30ed7e431ea7b9162b16fe95666000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610a3b806100746000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80630d40ec331461005c5780632864da1c1461007a5780633bce5d4c146100aa5780638fa1838a146100db578063add4c7841461010b575b600080fd5b61006461013c565b6040516100719190610556565b60405180910390f35b610094600480360381019061008f91906105c2565b6101de565b6040516100a191906105fe565b60405180910390f35b6100c460048036038101906100bf9190610645565b610286565b6040516100d29291906106a7565b60405180910390f35b6100f560048036038101906100f09190610645565b610336565b60405161010291906106eb565b60405180910390f35b610125600480360381019061012091906105c2565b6103da565b6040516101339291906106a7565b60405180910390f35b606060008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16630d40ec336040518163ffffffff1660e01b8152600401600060405180830381865afa1580156101ac573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906101d59190610874565b90508091505090565b60008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632864da1c846040518263ffffffff1660e01b815260040161023a91906108cc565b602060405180830381865afa158015610257573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061027b91906108e7565b905080915050919050565b60008060008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16633bce5d4c866040518263ffffffff1660e01b81526004016102e591906105fe565b6040805180830381865afa158015610301573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610325919061096c565b915091508181935093505050915091565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16638fa1838a836040518263ffffffff1660e01b815260040161039291906105fe565b602060405180830381865afa1580156103af573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103d391906109d8565b9050919050565b60008060008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663add4c784866040518263ffffffff1660e01b815260040161043991906108cc565b6040805180830381865afa158015610455573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610479919061096c565b915091508181935093505050915091565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b600061ffff82169050919050565b6104cd816104b6565b82525050565b60006104df83836104c4565b60208301905092915050565b6000602082019050919050565b60006105038261048a565b61050d8185610495565b9350610518836104a6565b8060005b8381101561054957815161053088826104d3565b975061053b836104eb565b92505060018101905061051c565b5085935050505092915050565b6000602082019050818103600083015261057081846104f8565b905092915050565b6000604051905090565b600080fd5b600080fd5b6000819050919050565b61059f8161058c565b81146105aa57600080fd5b50565b6000813590506105bc81610596565b92915050565b6000602082840312156105d8576105d7610582565b5b60006105e6848285016105ad565b91505092915050565b6105f8816104b6565b82525050565b600060208201905061061360008301846105ef565b92915050565b610622816104b6565b811461062d57600080fd5b50565b60008135905061063f81610619565b92915050565b60006020828403121561065b5761065a610582565b5b600061066984828501610630565b91505092915050565b6000819050919050565b61068581610672565b82525050565b60008160000b9050919050565b6106a18161068b565b82525050565b60006040820190506106bc600083018561067c565b6106c96020830184610698565b9392505050565b60008115159050919050565b6106e5816106d0565b82525050565b600060208201905061070060008301846106dc565b92915050565b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6107548261070b565b810181811067ffffffffffffffff821117156107735761077261071c565b5b80604052505050565b6000610786610578565b9050610792828261074b565b919050565b600067ffffffffffffffff8211156107b2576107b161071c565b5b602082029050602081019050919050565b600080fd5b6000815190506107d781610619565b92915050565b60006107f06107eb84610797565b61077c565b90508083825260208201905060208402830185811115610813576108126107c3565b5b835b8181101561083c578061082888826107c8565b845260208401935050602081019050610815565b5050509392505050565b600082601f83011261085b5761085a610706565b5b815161086b8482602086016107dd565b91505092915050565b60006020828403121561088a57610889610582565b5b600082015167ffffffffffffffff8111156108a8576108a7610587565b5b6108b484828501610846565b91505092915050565b6108c68161058c565b82525050565b60006020820190506108e160008301846108bd565b92915050565b6000602082840312156108fd576108fc610582565b5b600061090b848285016107c8565b91505092915050565b61091d81610672565b811461092857600080fd5b50565b60008151905061093a81610914565b92915050565b6109498161068b565b811461095457600080fd5b50565b60008151905061096681610940565b92915050565b6000806040838503121561098357610982610582565b5b60006109918582860161092b565b92505060206109a285828601610957565b9150509250929050565b6109b5816106d0565b81146109c057600080fd5b50565b6000815190506109d2816109ac565b92915050565b6000602082840312156109ee576109ed610582565b5b60006109fc848285016109c3565b9150509291505056fea2646970667358221220eff6994d5b378137166ccc1ad8cac1d397d7a7f87bef618f3595ac6b3de354f764736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80630d40ec331461005c5780632864da1c1461007a5780633bce5d4c146100aa5780638fa1838a146100db578063add4c7841461010b575b600080fd5b61006461013c565b6040516100719190610556565b60405180910390f35b610094600480360381019061008f91906105c2565b6101de565b6040516100a191906105fe565b60405180910390f35b6100c460048036038101906100bf9190610645565b610286565b6040516100d29291906106a7565b60405180910390f35b6100f560048036038101906100f09190610645565b610336565b60405161010291906106eb565b60405180910390f35b610125600480360381019061012091906105c2565b6103da565b6040516101339291906106a7565b60405180910390f35b606060008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16630d40ec336040518163ffffffff1660e01b8152600401600060405180830381865afa1580156101ac573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906101d59190610874565b90508091505090565b60008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632864da1c846040518263ffffffff1660e01b815260040161023a91906108cc565b602060405180830381865afa158015610257573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061027b91906108e7565b905080915050919050565b60008060008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16633bce5d4c866040518263ffffffff1660e01b81526004016102e591906105fe565b6040805180830381865afa158015610301573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610325919061096c565b915091508181935093505050915091565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16638fa1838a836040518263ffffffff1660e01b815260040161039291906105fe565b602060405180830381865afa1580156103af573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103d391906109d8565b9050919050565b60008060008060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663add4c784866040518263ffffffff1660e01b815260040161043991906108cc565b6040805180830381865afa158015610455573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610479919061096c565b915091508181935093505050915091565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b600061ffff82169050919050565b6104cd816104b6565b82525050565b60006104df83836104c4565b60208301905092915050565b6000602082019050919050565b60006105038261048a565b61050d8185610495565b9350610518836104a6565b8060005b8381101561054957815161053088826104d3565b975061053b836104eb565b92505060018101905061051c565b5085935050505092915050565b6000602082019050818103600083015261057081846104f8565b905092915050565b6000604051905090565b600080fd5b600080fd5b6000819050919050565b61059f8161058c565b81146105aa57600080fd5b50565b6000813590506105bc81610596565b92915050565b6000602082840312156105d8576105d7610582565b5b60006105e6848285016105ad565b91505092915050565b6105f8816104b6565b82525050565b600060208201905061061360008301846105ef565b92915050565b610622816104b6565b811461062d57600080fd5b50565b60008135905061063f81610619565b92915050565b60006020828403121561065b5761065a610582565b5b600061066984828501610630565b91505092915050565b6000819050919050565b61068581610672565b82525050565b60008160000b9050919050565b6106a18161068b565b82525050565b60006040820190506106bc600083018561067c565b6106c96020830184610698565b9392505050565b60008115159050919050565b6106e5816106d0565b82525050565b600060208201905061070060008301846106dc565b92915050565b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6107548261070b565b810181811067ffffffffffffffff821117156107735761077261071c565b5b80604052505050565b6000610786610578565b9050610792828261074b565b919050565b600067ffffffffffffffff8211156107b2576107b161071c565b5b602082029050602081019050919050565b600080fd5b6000815190506107d781610619565b92915050565b60006107f06107eb84610797565b61077c565b90508083825260208201905060208402830185811115610813576108126107c3565b5b835b8181101561083c578061082888826107c8565b845260208401935050602081019050610815565b5050509392505050565b600082601f83011261085b5761085a610706565b5b815161086b8482602086016107dd565b91505092915050565b60006020828403121561088a57610889610582565b5b600082015167ffffffffffffffff8111156108a8576108a7610587565b5b6108b484828501610846565b91505092915050565b6108c68161058c565b82525050565b60006020820190506108e160008301846108bd565b92915050565b6000602082840312156108fd576108fc610582565b5b600061090b848285016107c8565b91505092915050565b61091d81610672565b811461092857600080fd5b50565b60008151905061093a81610914565b92915050565b6109498161068b565b811461095457600080fd5b50565b60008151905061096681610940565b92915050565b6000806040838503121561098357610982610582565b5b60006109918582860161092b565b92505060206109a285828601610957565b9150509250929050565b6109b5816106d0565b81146109c057600080fd5b50565b6000815190506109d2816109ac565b92915050565b6000602082840312156109ee576109ed610582565b5b60006109fc848285016109c3565b9150509291505056fea2646970667358221220eff6994d5b378137166ccc1ad8cac1d397d7a7f87bef618f3595ac6b3de354f764736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getActiveCollections()": {
+        "returns": {
+          "_0": "ids of active collections in the oracle"
+        }
+      },
+      "getCollectionID(bytes32)": {
+        "details": "using the hash of collection name, clients can query collection id with respect to its hash, check https://razorscan.io/governance/datafeeds for a full list of active collection names",
+        "params": {
+          "_name": "bytes32 hash of the collection name"
+        },
+        "returns": {
+          "_0": "collection ID"
+        }
+      },
+      "getCollectionStatus(uint16)": {
+        "params": {
+          "_id": "collection ID"
+        },
+        "returns": {
+          "_0": "status of the collection"
+        }
+      },
+      "getResult(bytes32)": {
+        "params": {
+          "_name": "bytes32 hash of the collection name"
+        },
+        "returns": {
+          "_0": "result of the collection and its power",
+          "_1": "power"
+        }
+      },
+      "getResultFromID(uint16)": {
+        "params": {
+          "_id": "collection ID"
+        },
+        "returns": {
+          "_0": "result of the collection and its power",
+          "_1": "power"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getCollectionStatus(uint16)": {
+        "notice": "fetch collection status using id"
+      },
+      "getResult(bytes32)": {
+        "notice": "fetch collection result by name"
+      },
+      "getResultFromID(uint16)": {
+        "notice": "fetch collection result by Id"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 43,
+        "contract": "contracts/dexPrice.sol:DataFeed",
+        "label": "resultManager",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(IResultManager)40"
+      }
+    ],
+    "types": {
+      "t_contract(IResultManager)40": {
+        "encoding": "inplace",
+        "label": "contract IResultManager",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

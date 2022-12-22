@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/dexPrice.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.8.0;\r\n\r\ninterface IResultManager {\r\n    function getCollectionID(bytes32 _name) external view returns (uint16);\r\n\r\n    function getResult(bytes32 _name) external view returns (uint256, int8);\r\n\r\n    function getResultFromID(uint16 _id) external view returns (uint256, int8);\r\n\r\n    function getActiveCollections() external view returns (uint16[] memory);\r\n\r\n    function getCollectionStatus(uint16 _id) external view returns (bool);\r\n}\r\n\r\ncontract DataFeed {\r\n    IResultManager internal resultManager;\r\n\r\n    constructor() {\r\n        resultManager = IResultManager(0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566);\r\n    }\r\n\r\n\r\n    ///@dev using the hash of collection name, clients can query collection id with respect to its hash,\r\n    ///check https://razorscan.io/governance/datafeeds for a full list of active collection names\r\n    ///@param _name bytes32 hash of the collection name\r\n    ///@return collection ID\r\n    function getCollectionID(bytes32 _name)\r\n    public\r\n    view\r\n    returns (uint16) {\r\n       (uint16 id) = resultManager.getCollectionID(_name);\r\n       return id;\r\n    }\r\n\r\n    /// @notice fetch collection result by name\r\n    /// @param _name bytes32 hash of the collection name\r\n    /// @return result of the collection and its power\r\n    /// @return power\r\n    function getResult(bytes32 _name)\r\n        public\r\n        view\r\n        returns (uint256, int8)\r\n    {\r\n        (uint256 result, int8 power) = resultManager.getResult(_name);\r\n        return (result, power);\r\n    }\r\n\r\n\r\n    ///@return ids of active collections in the oracle\r\n    function getActiveCollections()\r\n    public\r\n    view\r\n    returns (uint16[] memory) {\r\n        (uint16[] memory activeCollectionIds) = resultManager.getActiveCollections();\r\n        return activeCollectionIds;\r\n    }\r\n\r\n    /// @notice fetch collection result by Id\r\n    /// @param _id collection ID\r\n    /// @return result of the collection and its power\r\n    /// @return power\r\n    function getResultFromID(uint16 _id)\r\n    public\r\n    view\r\n    returns (uint256, int8) {\r\n        (uint256 result, int8 power) = resultManager.getResultFromID(_id);\r\n        return (result, power);\r\n    }\r\n\r\n\r\n     /// @notice fetch collection status using id\r\n     /// @param _id collection ID\r\n     /// @return status of the collection\r\n    function getCollectionStatus(uint16 _id) public view returns (bool) {\r\n        return resultManager.getCollectionStatus(_id);\r\n    }\r\n}\r\n\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

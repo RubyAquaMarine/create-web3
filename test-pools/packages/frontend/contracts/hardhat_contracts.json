@@ -1,0 +1,167 @@
+{
+  "2255010950618556": [
+    {
+      "name": "europa",
+      "chainId": "2255010950618556",
+      "contracts": {
+        "DataFeed": {
+          "address": "0x078184E2a786cBBdf73C908A8bf68Eeffaac4678",
+          "abi": [
+            {
+              "inputs": [],
+              "stateMutability": "nonpayable",
+              "type": "constructor"
+            },
+            {
+              "inputs": [],
+              "name": "getActiveCollections",
+              "outputs": [
+                {
+                  "internalType": "uint16[]",
+                  "name": "",
+                  "type": "uint16[]"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "bytes32",
+                  "name": "_name",
+                  "type": "bytes32"
+                }
+              ],
+              "name": "getCollectionID",
+              "outputs": [
+                {
+                  "internalType": "uint16",
+                  "name": "",
+                  "type": "uint16"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint16",
+                  "name": "_id",
+                  "type": "uint16"
+                }
+              ],
+              "name": "getCollectionStatus",
+              "outputs": [
+                {
+                  "internalType": "bool",
+                  "name": "",
+                  "type": "bool"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "bytes32",
+                  "name": "_name",
+                  "type": "bytes32"
+                }
+              ],
+              "name": "getResult",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "int8",
+                  "name": "",
+                  "type": "int8"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint16",
+                  "name": "_id",
+                  "type": "uint16"
+                }
+              ],
+              "name": "getResultFromID",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "int8",
+                  "name": "",
+                  "type": "int8"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            }
+          ]
+        },
+        "DexProp": {
+          "address": "0xd2F8B945b4F2323A0d3bcbd20990c9B4C1653A6d",
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_address",
+                  "type": "address"
+                }
+              ],
+              "stateMutability": "nonpayable",
+              "type": "constructor"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "pool",
+                  "type": "uint256"
+                }
+              ],
+              "name": "getPool",
+              "outputs": [
+                {
+                  "internalType": "address",
+                  "name": "",
+                  "type": "address"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [],
+              "name": "getPoolLength",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

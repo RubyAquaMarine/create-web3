@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/interfaceDEX.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.8.0;\r\n\r\ninterface IDEX {\r\n    function allPairsLength() external view returns (uint256);\r\n    function allPairs(uint256 pool) external view returns (address);\r\n}\r\n\r\ncontract DexProp {\r\n    IDEX internal resultManager;\r\n\r\n    constructor(address _address) {\r\n        resultManager = IDEX(_address);\r\n    }\r\n\r\n    function getPoolLength() public view returns (uint256) {\r\n        uint256 id = resultManager.allPairsLength();\r\n        return id;\r\n    }\r\n\r\n    function getPool(uint256 pool) public view returns (address) {\r\n        address id = resultManager.allPairs(pool);\r\n        return id;\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

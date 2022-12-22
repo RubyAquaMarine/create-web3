@@ -1,0 +1,144 @@
+{
+  "address": "0xc698Ce0688a6d5Ca51351ffFbc48D6bC2AD9eC31",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "feeToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeTokenETHPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ethUSDPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasEstimate",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "contract IERC20",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint112",
+                  "name": "amount",
+                  "type": "uint112"
+                }
+              ],
+              "internalType": "struct Types.TokenAmount",
+              "name": "input",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "contract IERC20",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint112",
+                  "name": "amount",
+                  "type": "uint112"
+                }
+              ],
+              "internalType": "struct Types.TokenAmount",
+              "name": "output",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Types.Order",
+          "name": "order",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "swapData",
+          "type": "bytes"
+        }
+      ],
+      "name": "fill",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "failReason",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6c4a363497446c3a6e9831b4ef6eb934cfdc51218622b238e1ff58e55e9990c5",
+  "receipt": {
+    "to": "0x0000000000000000000000000000000000000000",
+    "from": "0x41DD8Ea1fc8d83f8c4a20a5a6E57238c7F476C09",
+    "contractAddress": "0xc698Ce0688a6d5Ca51351ffFbc48D6bC2AD9eC31",
+    "transactionIndex": 0,
+    "gasUsed": "53000",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xab9d94f75c8e497ef06a22455b33986630d43490cbec6398c389a4f3cd388262",
+    "transactionHash": "0x6c4a363497446c3a6e9831b4ef6eb934cfdc51218622b238e1ff58e55e9990c5",
+    "logs": [],
+    "blockNumber": 2236893,
+    "cumulativeGasUsed": "53000",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "9e87d06f898d050c7b38b99cb6cd4986",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"},{\"internalType\":\"contract IERC20\",\"name\":\"feeToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"feeTokenETHPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"ethUSDPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"gasEstimate\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint112\",\"name\":\"amount\",\"type\":\"uint112\"}],\"internalType\":\"struct Types.TokenAmount\",\"name\":\"input\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"contract IERC20\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint112\",\"name\":\"amount\",\"type\":\"uint112\"}],\"internalType\":\"struct Types.TokenAmount\",\"name\":\"output\",\"type\":\"tuple\"}],\"internalType\":\"struct Types.Order\",\"name\":\"order\",\"type\":\"tuple\"},{\"internalType\":\"bytes\",\"name\":\"swapData\",\"type\":\"bytes\"}],\"name\":\"fill\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"},{\"internalType\":\"string\",\"name\":\"failReason\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"fill((address,address,uint256,uint256,uint256,(address,uint112),(address,uint112)),bytes)\":{\"notice\":\"Fill an order using the given call data details.\"}},\"notice\":\"Abstraction of DEX integration with simple fill function.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/IDexRouter.sol\":\"IDexRouter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n}\\n\",\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\"},\"contracts/IDexRouter.sol\":{\"content\":\"//SPDX-License-Identifier: Unlicense\\r\\npragma solidity ^0.8.0;\\r\\npragma experimental ABIEncoderV2;\\r\\n\\r\\nimport \\\"./Types.sol\\\";\\r\\n\\r\\n/**\\r\\n * Abstraction of DEX integration with simple fill function.\\r\\n */\\r\\ninterface IDexRouter {\\r\\n\\r\\n    /**\\r\\n     * Fill an order using the given call data details.\\r\\n     */\\r\\n    function fill(Types.Order memory order, bytes calldata swapData) external returns (bool status, string memory failReason);\\r\\n}\",\"keccak256\":\"0x45faccf33e5a0a19549625dbd42caffb30ecf7c11498860c7c997529b9d8022f\",\"license\":\"Unlicense\"},\"contracts/Types.sol\":{\"content\":\"//SPDX-License-Identifier: Unlicense\\r\\npragma solidity ^0.8.0;\\r\\npragma experimental ABIEncoderV2;\\r\\n\\r\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\r\\n\\r\\n/*\\r\\ncannot hold state variables, fallback or payable functions also cannot be created inside\\r\\nthe library\\r\\n\\r\\nonly pure and view functions can be called from outside of the library\\r\\n\\r\\n*/\\r\\n\\r\\nlibrary Types {\\r\\n\\r\\n    struct TokenAmount {\\r\\n        IERC20 token;\\r\\n        uint112 amount;\\r\\n    }\\r\\n\\r\\n    //status of order. Only tracked on action from user/miners\\r\\n    enum OrderStatus {\\r\\n        UNDEFINED,\\r\\n        PENDING,\\r\\n        FILLED,\\r\\n        CANCELLED,\\r\\n        PENALIZED\\r\\n    }\\r\\n\\r\\n    struct Order {\\r\\n\\r\\n        //trader that owns the order\\r\\n        address trader;\\r\\n\\r\\n        //the token we are taking as fee\\r\\n        IERC20 feeToken;\\r\\n\\r\\n        //eth price of fee token in 18-decimal units\\r\\n        uint feeTokenETHPrice;\\r\\n\\r\\n        //current price of ETH in USD units\\r\\n        uint ethUSDPrice;\\r\\n\\r\\n        //an estimate of gas to use to fill the order\\r\\n        uint gasEstimate;\\r\\n\\r\\n        //token being offered\\r\\n        TokenAmount input;\\r\\n\\r\\n        //token wanted\\r\\n        TokenAmount output;\\r\\n    }\\r\\n\\r\\n    //============== CONFIG STATE =============/\\r\\n    struct Config {\\r\\n        //dev team address (120b)\\r\\n        address devTeam;\\r\\n\\r\\n        //bps fee expressed as a whole number\\r\\n        uint128 minFee;\\r\\n\\r\\n        //penalty a user faces for removing assets or \\r\\n        //allowances before a trade\\r\\n        uint128 penaltyFee;\\r\\n\\r\\n        //number of blocks to lock stake and order cancellations\\r\\n        uint8 lockoutBlocks;\\r\\n    }\\r\\n\\r\\n    //============== ACCESS STATE =============/\\r\\n    //storage structure of access controls\\r\\n    struct AccessControl {\\r\\n        bool reentrantFlag;\\r\\n        mapping(bytes32 => mapping(address => bool)) roles;\\r\\n    }\\r\\n\\r\\n    //============== INITIALIZATION STATE =============/\\r\\n    struct InitControls {\\r\\n        bool initialized;\\r\\n        bool initializing;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xde3f80eb6bf222c11de220f4cce5c85b92910abb1b5e48510316b117ce86df3f\",\"license\":\"Unlicense\"}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "libraries": {
+    "BaseAccess": "0xf461e67FE8BAAF4882C2fC6f200233794540C5A0",
+    "BaseConfig": "0xB63aB83B150aA88A879fEFb77EE0bc0b9C0CF4e0",
+    "LibAccess": "0xd43017Eb1F07A12b688C54C722c6358Fe2A3c126",
+    "LibConfig": "0xA8eB0F3c31403437dEc22612f090F6Da9EEf3196",
+    "LibStorage": "0x9fc8D3C808917f8eC81908607EBf1684F100b647",
+    "Settlement": "0x2ec6c674dB9a9625BC7e699CAc4c6306084827FF"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "fill((address,address,uint256,uint256,uint256,(address,uint112),(address,uint112)),bytes)": {
+        "notice": "Fill an order using the given call data details."
+      }
+    },
+    "notice": "Abstraction of DEX integration with simple fill function.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
