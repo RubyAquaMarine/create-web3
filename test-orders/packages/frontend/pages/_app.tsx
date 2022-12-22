@@ -19,6 +19,8 @@ import {
 
 import { useIsMounted } from '../hooks';
 
+import { fancyRasalhague, actualSecretCebalrai } from '../constants';
+
 // Get environment variables
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID as string;
 // const infuraId = process.env.NEXT_PUBLIC_INFURA_ID as string;
@@ -38,8 +40,12 @@ const hardhatChain: Chain = {
   testnet: true,
 };
 
+// import rpc chain names
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, hardhatChain],
+  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, hardhatChain, chain.goerli,
+  actualSecretCebalrai,
+  fancyRasalhague
+  ],// aquamod
   [alchemyProvider({ alchemyId }), publicProvider()]
 );
 
