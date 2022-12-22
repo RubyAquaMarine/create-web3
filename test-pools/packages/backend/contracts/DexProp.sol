@@ -7,7 +7,10 @@ interface IDEX {
     function allPairsLength() external view returns (uint256);
     function allPairs(uint256 pool) external view returns (address);
 }
-
+/*
+input uniswap factory address 
+- 0xc2f4C9B69448D94da2623787bD552F12B6a91278 (fancy v2)
+*/
 contract DexProp {
     IDEX internal resultManager;
 
