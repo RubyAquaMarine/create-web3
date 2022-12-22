@@ -13,8 +13,8 @@ export const SetGreeter = () => {
   const { data: signerData } = useSigner();
 
   const allContracts = contracts as any;
-  const greeterAddress = allContracts[chainId][0].contracts.Greeter.address;
-  const greeterABI = allContracts[chainId][0].contracts.Greeter.abi;
+  const greeterAddress = allContracts[chainId][0].contracts.BaseAccess.address;
+  const greeterABI = allContracts[chainId][0].contracts.BaseAccess.abi;
 
   const greeterContract = useContract({
     address: greeterAddress,
@@ -36,7 +36,7 @@ export const SetGreeter = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const tx = await greeterContract?.setGreeting(newGreeter);
+      const tx = await greeterContract?.addRole('',greeterAddress);//aqua fix later 
       await tx.wait();
       setNewGreeter('');
       setLoading(false);

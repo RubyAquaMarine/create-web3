@@ -16,8 +16,8 @@ export const GetGreeter = () => {
 
   console.log("test all contracts ", allContracts.length, allContracts)
   
-  const greeterAddress = allContracts[chainId][0].contracts.Greeter.address;
-  const greeterABI = allContracts[chainId][0].contracts.Greeter.abi;
+  const greeterAddress = allContracts[chainId][0].contracts.BaseAccess.address;
+  const greeterABI = allContracts[chainId][0].contracts.BaseAccess.abi;
 
   const greeterContract = useContract({
     address: greeterAddress,
@@ -27,7 +27,7 @@ export const GetGreeter = () => {
 
   const fetchData = useCallback(async () => {
     try {
-      const greeter = await greeterContract?.greet();
+      const greeter = await greeterContract?.ADMIN_ROLE();
       setCurrentGreeter(greeter);
       setError('');
     } catch (error) {
