@@ -86,7 +86,7 @@ export const DataFeedV2 = () => {
 
     try {
       // aqua
-      const eth = 'ethCollectionMedian';
+      const eth = 'ETHUSD';//ethCollectionMedian not active
       let bytes = ethers.utils.toUtf8Bytes(eth);
 
       const priceCollectionName = ethers.utils.keccak256(bytes);

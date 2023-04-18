@@ -14,7 +14,7 @@ import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
 import { useIsMounted } from '../hooks';
 
-import { fancyRasalhague, actualSecretCebalrai } from '../constants';
+import { stagingv3, europa} from '../constants';
 
 // Get environment variables
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID;
@@ -38,8 +38,7 @@ const hardhatChain = {
 // import rpc chain names
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, hardhatChain, chain.goerli,
-  actualSecretCebalrai,
-  fancyRasalhague
+  europa,stagingv3
   ],// aquamod
   [alchemyProvider({ alchemyId }), publicProvider()]
 );

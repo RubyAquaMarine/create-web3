@@ -6,7 +6,7 @@ import {
   DataFeed, DataFeedV2, DataFeedV3, DexProp, DexPools, Pools
 } from '../components/contract';
 
-/*
+
 export default function Home() {
   return (
     <div className={''}>
@@ -31,19 +31,19 @@ export default function Home() {
         }}
       >
       <b>Razor Oracle:</b>
-       <DataFeed />
-
+      <b>ETHUSD</b>
+   
        <DataFeedV2 />
 
-       <DataFeedV3 />
+  
 
-       <DexProp />
-       
       </main>
     </div>
   );
 }
-*/
+
+
+/*
 export default function Home() {
   return (
     <div className={''}>
@@ -76,3 +76,4 @@ export default function Home() {
     </div>
   );
 }
+*/

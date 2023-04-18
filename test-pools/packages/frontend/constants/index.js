@@ -1,3 +1,3 @@
 
-export { fancyRasalhague, actualSecretCebalrai} from "./chainlist";
+export { europa, stagingv3} from "./chainlist";
 

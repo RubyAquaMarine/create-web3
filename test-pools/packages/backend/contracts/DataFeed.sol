@@ -23,7 +23,7 @@ contract DataFeed {
     IResultManager internal resultManager;
 
     constructor() {
-        resultManager = IResultManager(0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566);// whispering testnet 
+        resultManager = IResultManager(0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84);// europa staging v3
     }
 
 
